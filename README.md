@@ -5,3 +5,4 @@ comes with reusable plan sql file.
 # TODO:
 refactor unit test. 
 configure docker image for deploying with docker.
+for now you have to deploy to application server locally.
