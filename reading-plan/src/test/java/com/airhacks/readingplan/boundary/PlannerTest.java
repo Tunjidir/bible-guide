@@ -4,6 +4,7 @@ import com.airhacks.readingplan.entity.ReadingPlan;
 import static com.airhacks.readingplan.entity.ReadingPlan.ALL_PLAN;
 import static com.airhacks.readingplan.entity.Session.EVENING;
 import static com.airhacks.readingplan.entity.Session.MORNING;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import javax.persistence.EntityManager;
@@ -61,7 +62,9 @@ public class PlannerTest {
   }
   
   public List<ReadingPlan> plans() {
-    return List.of(new ReadingPlan("Matthew Chapter 1", MORNING, new Date()),
-            new ReadingPlan("Exodus Chapter 2", EVENING, new Date()));
+      List<ReadingPlan> mockPlans = new ArrayList<>();
+      mockPlans.add(new ReadingPlan("Matthew Chapter 1", MORNING, new Date()));
+      mockPlans.add(new ReadingPlan("Exodus Chapter 2", EVENING, new Date()));
+      return mockPlans;
   }
 }
