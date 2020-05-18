@@ -1,4 +1,4 @@
-package com.airhacks.readingplan.entity;
+package com.gencolabs.readingplan.entity;
 
 /**
  *
